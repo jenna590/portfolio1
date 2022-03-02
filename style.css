@@ -3,49 +3,82 @@
 }
 body{
   margin: 0;
+
+}
+.lower-body{
   background-image: linear-gradient(to right,  rgb(253, 214, 255), rgb(255, 254, 149));
+
 }
 table{
   padding-bottom: 20px;
 }
+.skills-list{
+  margin: 0 auto;
+  padding: 20px;
+  line-height: 30px;
+}
 a{
   text-decoration: none;
 }
+ul li{
+  padding-right:8%;
+  list-style-type: none;
+  font-family: monospace;
+  font-size: 25px;
+  line-height: 55px;
+  text-align: center;
+}
+ul li a{
+  color: black;
+  border: 2px solid black;
+  padding: 3px;
+}
+ul li a:hover{
+  background-color: pink;
+}
 
  h2{
-   position: -webkit-sticky;
-   position: sticky;
-   top: 75px;
+
    font-family: sans-serif;
    font-weight: 300;
    font-size: 1.5rem;
    color: black;
    text-align: center;
-   padding: 2% 20% 0 20%;
+   padding-top: 2%;
    line-height: 100%;
    background-color: white;
 
  }
 
- .skills{
-   position: -webkit-sticky;
-   position: sticky;
-   top: 75px;
+ .flex {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
    background-color: white;
-   height: 1000px;
-   /* z-index: -1; */
+ }
+ .skills{
+   width: 100%;
+   height: 100%;
+   background-color: ;
+ }
 
+ .contact{
+   text-align: center;
+   background-color: white;
  }
  h3{
-   font-family: forma-djr-text,sans-serif;
-   font-weight: 400;
+   font-family: sans-serif;
+   font-weight: 300;
    font-size: 1.2em;
    color: black;
    line-height: 1.5em;
-   padding-top: 10px;
-   padding-bottom: 10px;
+   padding-left: 50px;
+   padding-right: 40px;
+   text-align: left;
  }
-
+.cv{
+  text-decoration: underline;
+}
  p {
    font-family: monospace;
    text-align: center;
@@ -83,9 +116,10 @@ a{
 
 .banner-item1 {
   min-height: 75px;
-  font-family: forma-djr-text,sans-serif;
+  font-family: 'Syne Tactile', cursive;
   font-weight: 400;
-  font-size: 25px;
+  font-size: 27px;
+
 
 }
 .banner-item2{
@@ -129,13 +163,6 @@ a{
   min-height: 250px;
   z-index: -1;
 }
-.projects{
-  position: relative;
-  padding: 40px;
-  border: 1px solid black;
-  z-index: -1;
-
-}
 .projects-title{
   font-family: tuppence, serif;
   font-weight: 500;
@@ -154,7 +181,7 @@ a{
   margin-top: 50px;
 }
 
-.content{
+/* .content{
 
   padding: 0 25% 15% 25%;
 
@@ -174,12 +201,7 @@ a{
   font-size: 20px;
   color: black;
   font-style: italic;
-}
-
-.projects:hover{
-  background-color: pink;
-  transition-duration: 1s;
-}
+} */
 .img-mypicture {
   display: block;
   margin-left: auto;
@@ -187,7 +209,7 @@ a{
   width: 70%;
   padding-bottom: 10%
 }
-
+/*
 .img-documentation {
   display: inline-grid;
   margin: auto;
@@ -217,6 +239,18 @@ a{
    margin: auto;
    width: 30%;
    padding-bottom: 20px;
+ } */
+ .connect{
+   width: 100%;
+   height: 50px;
+   padding: 100px;
+   text-align: center;
+   font-family: sans-serif;
+   font-size: 40px;
+   color: pink;
+   text-decoration: underline;
+
+
  }
  @media only screen and (max-width: 970px) {
    .intro {
@@ -238,11 +272,17 @@ a{
  }
  @media only screen and (max-width: 500px) {
    .intro {
-      font-size: 1.7em;
+      font-size: 2.7em;
+   }
+   .td1{
+     width: 100%;
+   }
+   .td2{
+     width: 0%;
    }
    .mypic{
-     width: 150px;
-     height: 150px;
+     width: 0px;
+     height: 0px;
    }
    .banner-item1 {
      font-size: 19px;
