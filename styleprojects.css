@@ -53,6 +53,7 @@ tr{
   padding: 10px;
   text-align: center;
   border: 2px solid black;
+  border-radius: 50%;
 
 }
 .banner-item2:hover{
