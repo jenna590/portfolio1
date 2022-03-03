@@ -54,6 +54,7 @@ tr{
   text-align: center;
   border: 2px solid black;
   border-radius: 50%;
+  background-color: rgb(223, 223, 223);
 
 }
 .banner-item2:hover{
