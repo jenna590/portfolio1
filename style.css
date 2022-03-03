@@ -130,7 +130,7 @@ ul li a:hover{
   text-align: center;
   background-color: rgb(223, 223, 223);
   border: 2px solid black;
-
+  border-radius: 100%;
 
 }
 .banner-item2:hover{
