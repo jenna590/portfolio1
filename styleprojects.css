@@ -10,6 +10,10 @@ a{
 }
 table{
   padding-top: 10%;
+  width:100%;
+}
+tbody {
+  width:100%;
 }
 .td1{
   width: 30%;
@@ -17,9 +21,14 @@ table{
 }
 .td2{
   width: 70%;
+  display:flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }
 tr{
   vertical-align: top;
+  display:flex;
+  width:100%;
 }
 .banner-container{
   display: flex;
@@ -53,7 +62,7 @@ tr{
   padding: 10px;
   text-align: center;
   border: 2px solid black;
-  border-radius: 50%;
+
   background-color: rgb(223, 223, 223);
 
 }
@@ -169,9 +178,11 @@ div.gallery img {
 }
 
 div.desc {
-  padding: 15px;
+  padding: 5px;
+  vertical-align: bottom;
   text-align: center;
   color: lightgrey;
+  font-family: monospace;
 }
 @keyframes sun {
   0%{
@@ -195,6 +206,9 @@ div.desc {
     font-size: 1.1em;
     padding-left: 10px;
     padding-right: 10px;
+  }
+  .content-title{
+    font-size: 0.8em;
   }
 
 }
