@@ -37,16 +37,16 @@ ul li a:hover{
   background-color: pink;
 }
 
- h2{
+h2{
 
-   font-family: sans-serif;
-   font-weight: 300;
-   font-size: 1.5rem;
-   color: black;
-   text-align: center;
-   padding-top: 2%;
-   line-height: 100%;
-   background-color: white;
+  font-family: sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: black;
+  text-align: center;
+  padding-top: 2%;
+  line-height: 100%;
+  background-color: white;
 
  }
 
@@ -147,7 +147,6 @@ ul li a:hover{
   letter-spacing: -0.0025em;
   margin-left: 50px;
   margin-top: 150px;
-  border: 2px dotted transparent;
 
 }
 .projects-header{
@@ -289,6 +288,9 @@ ul li a:hover{
    }
    .banner-item1 {
      font-size: 25px;
+   }
+   .intro{
+     text-align: center;
    }
  }
  @media only screen and (max-width: 500px) {
