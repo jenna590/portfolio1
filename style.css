@@ -5,20 +5,44 @@ body{
   margin: 0;
 
 }
-.lower-body{
-  background-image: linear-gradient(to right,  rgb(253, 214, 255), rgb(255, 254, 149));
+a{
+  text-decoration: none;
+}
+h2{
+
+  font-family: sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: black;
+  text-align: center;
+  padding-top: 2%;
+  line-height: 100%;
+  background-color: white;
+
+}
+h3{
+  font-family: sans-serif;
+  font-weight: 300;
+  font-size: 1.2em;
+  color: black;
+  line-height: 1.5em;
+  padding-left: 50px;
+  padding-right: 40px;
+  text-align: left;
+}
+p {
+  font-family: monospace;
+  text-align: center;
+  font-weight: 300;
+  font-size: 170%;
+  color: black;
+  line-height: 150%;
+  padding: 0 10% 5% 10%;
+  text-decoration: underline;
 
 }
 table{
   padding-bottom: 20px;
-}
-.skills-list{
-  margin: 0 auto;
-  padding: 20px;
-  line-height: 30px;
-}
-a{
-  text-decoration: none;
 }
 ul li{
   padding-right:8%;
@@ -37,65 +61,7 @@ ul li a:hover{
   background-color: pink;
 }
 
-h2{
-
-  font-family: sans-serif;
-  font-weight: 300;
-  font-size: 1.5rem;
-  color: black;
-  text-align: center;
-  padding-top: 2%;
-  line-height: 100%;
-  background-color: white;
-
- }
-
- .flex {
-   display: flex;
-   flex-direction: row;
-   flex-wrap: wrap;
-   background-color: white;
- }
- .skills{
-   width: 100%;
-   height: 100%;
-   background-color: ;
- }
-
- .contact{
-   text-align: center;
-   background-color: white;
- }
- h3{
-   font-family: sans-serif;
-   font-weight: 300;
-   font-size: 1.2em;
-   color: black;
-   line-height: 1.5em;
-   padding-left: 50px;
-   padding-right: 40px;
-   text-align: left;
- }
-.cv{
-  text-decoration: underline;
-}
- p {
-   font-family: monospace;
-   text-align: center;
-   font-weight: 300;
-   font-size: 170%;
-   color: black;
-   line-height: 150%;
-   padding: 0 10% 5% 10%;
-   text-decoration: underline;
-
- }
- .td1{
-   width: 70%;
- }
- .td2{
-   width: 30%
- }
+/* top of page banner */
 
 .banner-container{
   display: flex;
@@ -112,15 +78,13 @@ h2{
 .banner{
   width: 175px;
   margin: 15px;
-  }
+}
 
 .banner-item1 {
   min-height: 75px;
   font-family: 'Syne Tactile', cursive;
   font-weight: 400;
   font-size: 27px;
-
-
 }
 .banner-item2{
   font-family: forma-djr-text,sans-serif;
@@ -136,6 +100,19 @@ h2{
 .banner-item2:hover{
   background-color: lightblue;
 }
+
+/* main introduction */
+
+.lower-body{
+  background-image: linear-gradient(to right,  rgb(253, 214, 255), rgb(255, 254, 149));
+
+}
+.td1{
+  width: 70%;
+}
+.td2{
+  width: 30%
+}
 .intro{
   font-family: sans-serif;
   font-weight: 300;
@@ -147,30 +124,6 @@ h2{
   letter-spacing: -0.0025em;
   margin-left: 50px;
   margin-top: 150px;
-
-}
-.projects-header{
-  text-align: center;
-  font-family: forma-djr-text,sans-serif;
-  font-weight: 400;
-  font-size: 25px;
-}
-.projects-container{
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: stretch;
-  align-content: stretch;
-  min-height: 250px;
-  z-index: -1;
-}
-.projects-title{
-  font-family: tuppence, serif;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 2.5rem;
-  color: black;
-
 }
 .mypic{
   max-width: 375px;
@@ -182,124 +135,76 @@ h2{
   margin-top: 50px;
 }
 
-/* .content{
+/* skills and interests */
 
-  padding: 0 25% 15% 25%;
-
+.skills-list{
+  margin: 0 auto;
+  padding: 20px;
+  line-height: 30px;
 }
-.content-title{
-  font-family: tuppence, serif;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 3.5vw;
-  color: black;
+.flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: white;
+}
+ /* contact me  */
+
+.connect{
+  width: 100%;
+  height: 50px;
+  padding: 100px;
   text-align: center;
+  font-family: sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  color: pink;
+  text-decoration: underline;
 }
-.project-date{
-  text-align: right;
-  font-family: forma-djr-text,sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  color: black;
-  font-style: italic;
-} */
-.img-mypicture {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 70%;
-  padding-bottom: 10%
+
+/* responsive */
+
+@media only screen and (max-width: 970px) {
+  .intro {
+    font-size: 2.75em;
+  }
+  .mypic{
+    width: 300px;
+    height: 300px;
+  }
 }
-/*
-.img-documentation {
-  display: inline-grid;
-  margin: auto;
-  width: 60%;
-  padding-top: 10%;
-
+@media only screen and (max-width: 738px) {
+  .intro {
+    font-size: 2.3em;
+  }
+  .mypic{
+    width: 250px;
+    height: 250px;
+  }
 }
- .img-type {
-   display: inline-grid;
-   margin: auto;
-   width: 100%;
-   padding: 5%;
- }
-
- .img-type2 {
-   display: inline-grid;
-   width: 100%;
- }
- .img-type3 {
-   display: inline-grid;
-   margin: auto;
-   width: 48%;
-   padding-top: 5%;
- }
- .img-type4 {
-   display: inline-grid;
-   margin: auto;
-   width: 30%;
-   padding-bottom: 20px;
- } */
- .connect{
-   width: 100%;
-   height: 50px;
-   padding: 100px;
-   text-align: center;
-   font-family: sans-serif;
-   font-size: 30px;
-   font-weight: 300;
-   color: pink;
-   text-decoration: underline;
-
-
- }
- @media only screen and (max-width: 970px) {
-   .intro {
-      font-size: 2.75em;
-   }
-   .mypic{
-     width: 300px;
-     height: 300px;
-   }
- }
- @media only screen and (max-width: 738px) {
-   .intro {
-      font-size: 2.3em;
-   }
-   .mypic{
-     width: 250px;
-     height: 250px;
-   }
- }
- @media only screen and (max-width: 550px) {
-   .intro {
-      font-size: 2.7em;
-   }
-   .td1{
-     width: 100%;
-   }
-   .td2{
-     width: 0%;
-   }
-   .mypic{
-     width: 0px;
-     height: 0px;
-   }
-   .banner-item1 {
-     font-size: 25px;
-   }
-   .intro{
-     text-align: center;
-   }
- }
- @media only screen and (max-width: 500px) {
-   .banner-item1{
-     font-size: 19px;
-   }
- }
-/*body {
- background-image: url("portfoliobg.png");
- background-color: #cccccc;
+@media only screen and (max-width: 550px) {
+  .intro {
+    font-size: 2.7em;
+  }
+  .td1{
+    width: 100%;
+  }
+  .td2{
+    width: 0%;
+  }
+  .mypic{
+    width: 0px;
+    height: 0px;
+  }
+  .banner-item1 {
+    font-size: 25px;
+  }
+  .intro{
+    text-align: center;
+  }
 }
-*/
+@media only screen and (max-width: 500px) {
+  .banner-item1{
+    font-size: 19px;
+  }
+}

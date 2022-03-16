@@ -4,32 +4,38 @@
 body{
   background-color:black;
   margin: 0;
+  padding-bottom: 7%;
 }
 a{
   text-decoration: none;
 }
-table{
-  padding-top: 10%;
+table, tbody {
   width:100%;
-}
-tbody {
-  width:100%;
-}
-.td1{
-  width: 30%;
-
-}
-.td2{
-  width: 70%;
-  display:flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
 }
 tr{
   vertical-align: top;
   display:flex;
   width:100%;
 }
+h1, h3{
+  font-family: sans-serif;
+  color: white;
+  line-height: 1.5em;
+  padding-left: 50px;
+  padding-right: 40px;
+  text-align: left;
+}
+.big-header{
+  font-weight: 300;
+  font-size: 1.8em;
+}
+.md-header{
+  font-weight: 200;
+  font-size: 1.4em;
+}
+
+/* top of page banner */
+
 .banner-container{
   display: flex;
   justify-content: space-between;
@@ -69,8 +75,19 @@ tr{
 .banner-item2:hover{
   background-color: lightblue;
 }
-.flex{
+.td1{
+  width: 30%;
+  padding-top: 4%;
 
+}
+.td2{
+  width: 70%;
+  padding-top: 4%;
+  display:flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.flex{
   height: 10vh;
   width: 100vw;
   display: flex;
@@ -80,87 +97,58 @@ tr{
   flex-wrap: wrap;
   padding-bottom: 10%;
 }
-.A-2{
+
+/* Animation */
+
+.A-1, .A-2, .A-3, .A-4, .A-5, .A-6, .A-7, .A-8{
   font-size: 100px;
   color: white;
   font-family:sans-serif;
-  /* width: 5vw;
-  height: 5vw;
-  border-radius: 50%;
-  background-color: black; */
+}
+.A-2{
   animation: sun 18s infinite linear alternate;
 }
 .A-3{
-  font-size: 100px;
-  color: white;
-  font-family:sans-serif;
   animation: sun 22s infinite linear alternate;
 }
 .A-4{
-  font-size: 100px;
-  color: white;
-  font-family:sans-serif;
   animation: sun 26s infinite linear alternate;
 }
 .A-1{
-  font-size: 100px;
-  color: white;
-  font-family:sans-serif;
-  animation: sun 14s infinite linear alternate, colr 7s infinite alternate;
+  animation: sun 14s infinite linear alternate
 }
 .A-5{
-  font-size: 100px;
-  color: white;
-  font-family:sans-serif;
   animation: sun 30s infinite linear alternate;
 }
 .A-6{
-  font-size: 100px;
-  color: white;
-  font-family:sans-serif;
   animation: sun 34s infinite linear alternate;
 }
 .A-7{
-  font-size:100px;
-  color: white;
-  font-family:sans-serif;
   animation: sun 38s infinite linear alternate;
 }
 .A-8{
-  font-size:100px;
-  color: white;
-  font-family:sans-serif;
   animation: sun 42s infinite linear alternate;
 }
+@keyframes sun {
+  0%{
+    transform: translateY(10vw) scaleY(0);
+
+  }
+  50%{
+    transform: translateY(10vw) scaleY(100%);
+  }
+  100%{
+    transform: translateY(10vw) scaleY(0);
+  }
+}
 .content{
-
-  padding: 30px 40px 30px 40px;
+  padding: 15% 5%;
   background-color: black;
-
-
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-h3{
-  font-family: sans-serif;
-  font-weight: 200;
-  font-size: 1.4em;
-  color: white;
-  line-height: 1.5em;
-  padding-left: 50px;
-  padding-right: 40px;
-  text-align: left;
-}
-h1{
-
-  font-family: sans-serif;
-  font-weight: 300;
-  font-size: 1.8em;
-  color: white;
-  line-height: 1.5em;
-  padding-left: 50px;
-  padding-right: 40px;
-  text-align: left;
-}
 div.gallery {
   margin: 15px;
   border: 1px solid #ccc;
@@ -184,19 +172,10 @@ div.desc {
   color: lightgrey;
   font-family: monospace;
 }
-@keyframes sun {
-  0%{
-    transform: translateY(10vw) scaleY(0);
 
-  }
-  50%{
-    transform: translateY(10vw) scaleY(100%);
-  }
-  100%{
-    transform: translateY(10vw) scaleY(0);
-  }
-}
-@media only screen and (max-width: 550px) {
+/* responsive  */
+
+@media only screen and (max-width: 700px) {
   h3{
     font-size: 1em;
     padding-left: 10px;
@@ -207,6 +186,10 @@ div.desc {
     padding-left: 10px;
     padding-right: 10px;
   }
+  .td1, .td2{
+    width: 100%;
+    margin: 0 auto;
+  }
   .content-title{
     font-size: 0.8em;
   }
@@ -214,7 +197,6 @@ div.desc {
     font-size: 25px;
   }
 }
-
 @media only screen and (max-width: 500px) {
   .banner-item1{
     font-size: 19px;
