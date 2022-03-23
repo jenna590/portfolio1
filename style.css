@@ -11,7 +11,7 @@ a{
 h2{
 
   font-family: sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 1.5rem;
   color: black;
   text-align: center;
@@ -20,15 +20,14 @@ h2{
   background-color: white;
 
 }
-h3{
+.about{
   font-family: sans-serif;
   font-weight: 300;
   font-size: 1.2em;
   color: black;
   line-height: 1.5em;
-  padding-left: 50px;
-  padding-right: 40px;
-  text-align: left;
+  padding:0 15% 0 15% ;
+  text-align: center;
 }
 p {
   font-family: monospace;
