@@ -1,45 +1,23 @@
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
-body{
-  margin: 0;
 
-}
 a{
   text-decoration: none;
 }
-h2{
 
-  font-family: sans-serif;
-  font-weight: 400;
-  font-size: 1.5rem;
-  color: black;
-  text-align: center;
-  padding-top: 2%;
-  line-height: 100%;
-  background-color: white;
-
-}
 .about{
   font-family: sans-serif;
   font-weight: 300;
-  font-size: 1.2em;
+  font-size: 1em;
   color: black;
   line-height: 1.5em;
-  padding:0 15% 0 15% ;
+  padding:0 25% 0 25% ;
   text-align: center;
 }
-p {
-  font-family: monospace;
-  text-align: center;
-  font-weight: 300;
-  font-size: 170%;
-  color: black;
-  line-height: 150%;
-  padding: 0 10% 5% 10%;
-  text-decoration: underline;
 
-}
 table{
   padding-bottom: 20px;
 }
@@ -67,85 +45,83 @@ ul li a:hover{
   justify-content: space-between;
   align-items: baseline;
   padding-left: 20px;
-  background-color: white;
+  background-color: #DCE1E5;
   position: fixed;
+  z-index: 3;
   height: 75px;
   width: 100%;
-
-
-}
-.banner{
-  width: 175px;
-  margin: 15px;
+  opacity:80%;
 }
 
 .banner-item1 {
   min-height: 75px;
   font-family: 'Syne Tactile', cursive;
   font-weight: 400;
-  font-size: 27px;
+  font-size: 33px;
+  margin: 15px;
 }
 .banner-item2{
-  font-family: forma-djr-text,sans-serif;
+  font-family: sans-serif;
   font-weight: 400;
   font-size: 17px;
   padding: 10px;
   text-align: center;
-  background-color: rgb(223, 223, 223);
-  border: 2px solid black;
-
-
+  border: 3px solid black;
+  border-radius: 25px;
+  width: 150px;
+  margin: 15px;
 }
 .banner-item2:hover{
-  background-color: lightblue;
+  transition-duration: 0.5s;
+  background-color: #D4ABED;
 }
 
 /* main introduction */
 
 .lower-body{
-  background-image: linear-gradient(to right,  rgb(253, 214, 255), rgb(255, 254, 149));
-
+  background-color: #DCE1E5;
+  position: relative;
+  min-height: 100vh;
 }
 .td1{
-  width: 70%;
+  width: 55%;
 }
 .td2{
-  width: 30%
+  width: 34%
 }
 .intro{
-  font-family: sans-serif;
-  font-weight: 300;
-  font-size: 3.5em;
-  height: 400px;
+  font-family: bilo, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 4.0em;
+  height: 380px;
   position: static;
-  color: black  ;
-  line-height: 105%;
+  color: black;
+  line-height: 120%;
   letter-spacing: -0.0025em;
   margin-left: 50px;
-  margin-top: 150px;
+  margin-top: 120px;
+  filter: drop-shadow(2px 2px 2px #B79CED);
 }
 .mypic{
-  max-width: 375px;
-  z-index: -1;
-  height: 375px;
+  max-width: 350px;
+  z-index: -2;
+  height: 350px;
   border-radius: 50%;
   display: inline-block;
-  margin-right: 50px;
-  margin-top: 50px;
+  margin-top: 65px;
+  filter: drop-shadow(16px 16px 16px rgb(177, 177, 177));
+  margin-left: 10%;
 }
 
 /* skills and interests */
 
-.skills-list{
-  margin: 0 auto;
-  padding: 20px;
-  line-height: 30px;
-}
 .flex {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   background-color: white;
+
 }
  /* contact me  */
 
@@ -160,30 +136,192 @@ ul li a:hover{
   color: pink;
   text-decoration: underline;
 }
+/* projects */
+.big-header{
+  font-weight: 300;
+  font-size: 1.8em;
+  z-index: 2;
+  position: relative;
+  padding: 3%;
+}
+.md-header{
+  font-weight: 200;
+  font-size: 1em;
+  padding: 3%;
+}
+h1{
+  font-family: sans-serif;
+  color: white;
+  line-height: 1.4em;
+  padding-left: 17px;
+  padding-right: 17px;
+  text-align: left;
+  font-weight: 100;
+  padding-bottom: 2%;
+}
+h2{
+  text-align: center;
+  color: white;
+  font-family: sans-serif;
+  font-weight: lighter;
+  font-size: 2.2em;
+  padding: 3% 3% 0 3%;
+  line-height: 130%;
+}
+h3{
+  text-align: left;
+  color: white;
+  font-family: sans-serif;
+  font-weight: lighter;
+  font-size: 1.3em;
+  line-height: 130%;
+  padding: 0 8% 3% 3%;
+}
+.content{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: space-evenly;
+  padding: 5px 20px 100px 20px;
+  position: absolute;
+  background-color: white;
+}
+.C1, .C2, .C3, .C4{
+  width: 48%;
+  height: 450px;
+  margin:1%;
+}
+.C1{
+  background-color: white;
+  color: black;
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+.C1 * {
+  box-sizing: border-box;
+  transition: all 0.45s ease;
+}
+.C1:before,
+.C1:after {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-top: 32px  rgba(0, 0, 0, 0.5);
+  border-bottom: 32px  rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: '';
+  transition: all 0.3s ease;
+  z-index: 1;
+  opacity: 0;
 
+}
+.thirteen-img{
+  position: relative;
+  width: 100%;
+  top:0;
+  backface-visibility: hidden;
+}
+.logo-img{
+  position: relative;
+  max-width: 100%;
+  top:27%;
+  backface-visibility: hidden;
+}
+.C1 figcaption{
+ position: absolute;
+ top: 10%;
+ bottom: 0;
+ left: 2%;
+ right: 0;
+ display: flex;
+ flex-direction: column;
+ opacity: 0;
+ z-index: 2;
+ transition-delay: 0.1s;
+}
+.C1:hover:before,
+.C1:hover:after {
+  transform: scale(1);
+  opacity: 1;
+}
+.C1:hover figcaption {
+  opacity: 1;
+}
+
+.C2{
+  background-color: blue;
+}
+.C3{
+  background-color: purple;
+}
+.C4{
+  background-color: red;
+}
+p{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5em;
+  color: black;
+  font-size: 1.5em;
+  text-align: center;
+}
 /* responsive */
-
-@media only screen and (max-width: 970px) {
-  .intro {
-    font-size: 2.75em;
-  }
-  .mypic{
-    width: 300px;
-    height: 300px;
+@media only screen and (min-width: 1290px) {
+  .C1, .C2, .C3, .C4{
+    width: 48%;
+    height: 550px;
   }
 }
-@media only screen and (max-width: 738px) {
-  .intro {
-    font-size: 2.3em;
-  }
+@media only screen and (max-width: 1000px) {
   .mypic{
     width: 250px;
     height: 250px;
   }
+  .intro {
+    font-size: 3em;
+    height: 297px;
+    margin-top: 110px;
+  }
+  .C1, .C2, .C3, .C4{
+    width: 48%;
+    height: 350px;
+  }
+}
+@media only screen and (max-width: 790px) {
+  .intro {
+    font-size: 3.3em;
+    height: 300px;
+    margin-top: 110px;
+    margin-left: 20px;
+  }
+  .mypic{
+    width:0px;
+    height: 0px;
+  }
+  .C1, .C2, .C3, .C4{
+    width: 90%;
+    height: 450px;
+  }
+  .content{
+    margin-top: 2%;
+  }
+  .td1{
+    width: 100%;
+  }
+  .td2{
+    width: 0%;
+  }
 }
 @media only screen and (max-width: 550px) {
   .intro {
-    font-size: 2.7em;
+    font-size: 2em;
+    margin-top: 95px;
+    height: 170px;
   }
   .td1{
     width: 100%;
@@ -196,14 +334,25 @@ ul li a:hover{
     height: 0px;
   }
   .banner-item1 {
-    font-size: 25px;
+    font-size: 26px;
   }
   .intro{
-    text-align: center;
+    text-align: left;
+  }
+  .C1, .C2, .C3, .C4{
+    width: 97%;
+    height: 350px;
   }
 }
 @media only screen and (max-width: 500px) {
   .banner-item1{
-    font-size: 19px;
+    font-size: 25px;
+  }
+  .intro {
+    font-size: 2.3em;
+    margin-top: 95px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 240px;
   }
 }
