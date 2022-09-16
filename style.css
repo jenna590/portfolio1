@@ -377,3 +377,12 @@ p{
     font-size: 1em;
   }
 }
+@media only screen and (max-width: 375px) {
+  .intro {
+    font-size: 1.8em;
+    margin-top: 95px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 275px;
+  }
+}
