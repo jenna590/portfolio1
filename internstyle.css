@@ -108,10 +108,16 @@ p{
   section{
     width: 100%;
   }
+  .wisteriainfo{
+    width: 700px;
+  }
 }
 @media only screen and (max-width: 790px) {
   h1{
     padding: 15% 3% 2% 3%;
+  }
+  .wisteriainfo{
+    width: 500px;
   }
 }
 @media only screen and (max-width: 550px) {
@@ -120,5 +126,9 @@ p{
   }
   img{
     max-width: 320px;
+  }
+  .wisteriainfo{
+    width: 100%;
+    font-size: 1.2em;
   }
 }
