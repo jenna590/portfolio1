@@ -131,4 +131,13 @@ p{
     width: 100%;
     font-size: 1.2em;
   }
+  .banner-item2{
+    padding: 7px;
+    border: 2px solid black;
+    width: 120px;
+    margin: 10px;
+  }
+  .banner-item1{
+    font-size: 23px;
+  }
 }
