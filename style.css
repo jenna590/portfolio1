@@ -18,9 +18,6 @@ a{
   text-align: center;
 }
 
-table{
-  padding-bottom: 20px;
-}
 ul li{
   padding-right:8%;
   list-style-type: none;
@@ -40,17 +37,23 @@ ul li a:hover{
 
 /* top of page banner */
 
-.banner-container{
+.banner-container, .banner-containerkitchen{
   display: flex;
-  justify-content: space-between;
   align-items: baseline;
   padding-left: 20px;
-  background-color: #DCE1E5;
+  background-color: white;
   position: fixed;
   z-index: 3;
   height: 75px;
   width: 100%;
   opacity:80%;
+  text-decoration: none;
+}
+.banner-container{
+  justify-content: right;
+}
+.banner-containerkitchen{
+  justify-content: space-between;
 }
 
 .banner-item1 {
@@ -66,42 +69,48 @@ ul li a:hover{
   font-size: 17px;
   padding: 10px;
   text-align: center;
-  border: 2px solid black;
   border-radius: 25px;
   width: 150px;
   margin: 15px;
+  background-color: #92e972;
 }
 .banner-item2:hover{
   transition-duration: 0.5s;
-  background-color: #D4ABED;
+  background-color: #33c100;
 }
-
+.name{
+  font-family: "area-normals", sans-serif;
+  font-weight: lighter;
+  font-style: normal;
+  font-size: 1em;
+}
 /* main introduction */
 
 .lower-body{
-  background-color: #DCE1E5;
+  background-color: transparent;
   position: relative;
   min-height: 100vh;
 }
 .td1{
-  width: 55%;
+  width: 60%;
 }
 .td2{
   width: 34%
 }
 .intro{
-  font-family: bilo, sans-serif;
-  font-weight: 600;
-  font-style: normal;
-  font-size: 4.0em;
-  height: 380px;
+  height: 560px;
   position: static;
   color: black;
-  line-height: 120%;
+  line-height: 110%;
   letter-spacing: -0.0025em;
   margin-left: 50px;
-  margin-top: 120px;
-  filter: drop-shadow(2px 2px 2px #B79CED);
+  margin-top: 80px;
+  font-size: 3.7em;
+}
+.bio{
+  font-family: "area-normal", sans-serif;
+  font-weight: bold;
+  font-style: normal;
 }
 .mypic{
   max-width: 350px;
@@ -184,7 +193,7 @@ h3{
   align-content: space-evenly;
   padding: 5px 20px 100px 20px;
   position: absolute;
-  background-color: white;
+  background-color: transparent;
 }
 .C1, .C2, .C3, .C4{
   width: 48%;
@@ -224,6 +233,50 @@ h3{
   width: 100%;
   top:0;
   backface-visibility: hidden;
+}
+.kitchen-img{
+  position: relative;
+  width: 100%;
+  backface-visibility: hidden;
+}
+.kitchencastpage{
+
+  width: 100%;
+}
+.kitchenscreen{
+  width: 45%;
+  padding: 0.2% 2% 5% 2%;
+}
+.screens{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 5%;
+}
+.kitchenheader{
+  padding: 10% 7% 0% 7%;
+  font-size: 5em;
+  font-weight: 200;
+}
+.kitchencastabout{
+  max-width: 80%;
+  padding: 1% 7%;
+}
+.kitchensubhead{
+  text-align: left;
+  line-height: 150%;
+  position: static;
+  font-weight: 300;
+  padding: 3% 3% 0 7%;
+}
+.kitchenbody{
+  text-align: left;
+  padding-left: 7%;
+  line-height: 150%;
+  position: static;
+  max-width: 80%;
+  font-size: 1em;
 }
 .logo-img{
   position: relative;
@@ -270,6 +323,60 @@ p{
   font-size: 1.5em;
   text-align: center;
 }
+footer{
+  color: black;
+  font-size: 1.5em;
+  padding-top: 5%;
+  font-family: sans-serif;
+  text-align: center;
+  line-height: 130%;
+  font-weight: lighter;
+}
+.work{
+  position: static;
+  font-family: "area-normal", sans-serif;
+  font-weight: lighter;
+  font-style: normal;
+  font-size: 2em;
+}
+/* dot */
+
+.stage {
+  top: 10%;
+  position: absolute;
+  z-index: -1;
+  /* must be explicit, for contrast */
+  background: transparent;
+  
+  /* weirdness happens when edges hit */
+  padding: 30px;
+  
+  /* autoprefixer helping here */
+}
+.dot {
+  position: relative;
+  left: 20%;
+  border-radius: 50%;
+  width: 450px;
+  height: 450px;
+  opacity: 20%;
+  display: inline-block;
+  /* needs to be very contrasty color. Some light gray won't work */
+  background: rgb(162, 181, 255);
+  filter: blur(15px);
+}
+.dot2 {
+  position: relative;
+  left: 40%;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  opacity: 40%;
+  display: inline-block;
+  /* needs to be very contrasty color. Some light gray won't work */
+  background: rgb(222, 255, 164);
+  filter: blur(15px);
+}
 /* responsive */
 @media only screen and (max-width: 1290px) {
   .C1, .C2, .C3, .C4{
@@ -278,7 +385,7 @@ p{
   }
   .intro {
     font-size: 3.2em;
-    height: 297px;
+    height: 500px;
     margin-top: 110px;
   }
   .mypic{
@@ -287,14 +394,12 @@ p{
   }
 }
 @media only screen and (max-width: 1000px) {
-  .mypic{
-    width: 260px;
-    height: 260px;
-  }
   .intro {
     font-size: 3em;
-    height: 350px;
     margin-top: 110px;
+  }
+  .table{
+    height: 600px;
   }
   .C1, .C2, .C3, .C4{
     width: 48%;
@@ -303,8 +408,8 @@ p{
 }
 @media only screen and (max-width: 850px) {
   .intro {
-    font-size: 3.3em;
-    height: 400px;
+    font-size: 2em;
+    height: 350px;
     margin-top: 110px;
     margin-left: 20px;
   }
@@ -314,7 +419,7 @@ p{
   }
   .C1, .C2, .C3, .C4{
     width: 90%;
-    height: 450px;
+    height: 500px;
   }
   .content{
     margin-top: 2%;
@@ -325,10 +430,14 @@ p{
   .td2{
     width: 0%;
   }
+  .kitchenscreen{
+    width: 100%;
+    padding: 0.2% 2% 5% 2%;
+  }
 }
 @media only screen and (max-width: 550px) {
   .intro {
-    font-size: 2em;
+    font-size: 1.2em;
     margin-top: 95px;
     height: 170px;
   }
@@ -337,13 +446,6 @@ p{
   }
   .td2{
     width: 0%;
-  }
-  .mypic{
-    width: 0px;
-    height: 0px;
-  }
-  .banner-item1 {
-    font-size: 26px;
   }
   .intro{
     text-align: left;
@@ -354,21 +456,17 @@ p{
   }
   .banner-item2{
     padding: 7px;
-    border: 2px solid black;
     width: 120px;
     margin: 10px;
   }
 }
 @media only screen and (max-width: 500px) {
-  .banner-item1{
-    font-size: 23px;
-  }
   .intro {
-    font-size: 2.2em;
-    margin-top: 95px;
+    font-size: 1.2em;
+    margin-top: 70px;
     margin-left: 10px;
     margin-right: 10px;
-    height: 240px;
+    height: 200px;
   }
   h1{
     font-size: 1.3em;
@@ -376,13 +474,21 @@ p{
   h3{
     font-size: 1em;
   }
+  .dot, .dot2{
+    height: 70px;
+    width: 70px;
+}
 }
 @media only screen and (max-width: 380px) {
   .intro {
     font-size: 1.8em;
-    margin-top: 95px;
+    margin-top: 60px;
     margin-left: 10px;
     margin-right: 10px;
     height: 275px;
   }
+  .dot, .dot2{
+    height: 70px;
+    width: 70px;
+}
 }

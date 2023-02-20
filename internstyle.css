@@ -43,14 +43,14 @@ img{
   font-size: 17px;
   padding: 10px;
   text-align: center;
-  border: 2px solid black;
   border-radius: 25px;
   width: 150px;
   margin: 15px;
+  background-color: #92e972;
 }
 .banner-item2:hover{
   transition-duration: 0.5s;
-  background-color: #D4ABED;
+  background-color: #33c100;
 }
 h1, h3{
   font-family: bilo, sans-serif;
