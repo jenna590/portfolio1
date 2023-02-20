@@ -47,7 +47,6 @@ ul li a:hover{
   height: 75px;
   width: 100%;
   opacity:80%;
-  text-decoration: none;
 }
 .banner-container{
   justify-content: right;
@@ -482,10 +481,10 @@ footer{
 @media only screen and (max-width: 380px) {
   .intro {
     font-size: 1.8em;
-    margin-top: 60px;
+    margin-top: 70px;
     margin-left: 10px;
     margin-right: 10px;
-    height: 275px;
+    height: 320px;
   }
   .dot, .dot2{
     height: 70px;
