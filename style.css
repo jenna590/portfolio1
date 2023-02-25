@@ -77,11 +77,11 @@ ul li a:hover{
   transition-duration: 0.5s;
   background-color: #33c100;
 }
-.name{
-  font-family: "area-normals", sans-serif;
+.intro .name{
+  font-family: 'Syne Tactile', cursive;
   font-weight: lighter;
   font-style: normal;
-  font-size: 1em;
+  font-size: 0.7em;
 }
 /* main introduction */
 
@@ -97,7 +97,7 @@ ul li a:hover{
   width: 34%
 }
 .intro{
-  height: 560px;
+  height: 470px;
   position: static;
   color: black;
   line-height: 110%;
@@ -254,20 +254,21 @@ h3{
   padding-top: 5%;
 }
 .kitchenheader{
-  padding: 10% 7% 0% 7%;
-  font-size: 5em;
-  font-weight: 200;
+  font-family: bilo, sans-serif;
+  font-weight: bolder;
+  font-size: 1.7em;
+  padding: 10% 3% 0.5% 3%;
 }
 .kitchencastabout{
   max-width: 80%;
   padding: 1% 7%;
 }
 .kitchensubhead{
+  font-family: bilo, sans-serif;
+  font-weight: bolder;
+  font-size: 1.4em;
+  padding: 0% 3% 0.5% 3%;
   text-align: left;
-  line-height: 150%;
-  position: static;
-  font-weight: 300;
-  padding: 3% 3% 0 7%;
 }
 .kitchenbody{
   text-align: left;
@@ -384,7 +385,7 @@ footer{
   }
   .intro {
     font-size: 3.2em;
-    height: 500px;
+    height: 400px;
     margin-top: 110px;
   }
   .mypic{
@@ -398,7 +399,7 @@ footer{
     margin-top: 110px;
   }
   .table{
-    height: 600px;
+    height: 400px;
   }
   .C1, .C2, .C3, .C4{
     width: 48%;
@@ -408,8 +409,8 @@ footer{
 @media only screen and (max-width: 850px) {
   .intro {
     font-size: 2em;
-    height: 350px;
-    margin-top: 110px;
+    height: 300px;
+    margin-top: 90px;
     margin-left: 20px;
   }
   .mypic{
@@ -436,9 +437,9 @@ footer{
 }
 @media only screen and (max-width: 550px) {
   .intro {
-    font-size: 1.2em;
-    margin-top: 95px;
-    height: 170px;
+    font-size: 1.8em;
+    margin-top: 85px;
+    height: 230px;
   }
   .td1{
     width: 100%;
@@ -461,11 +462,11 @@ footer{
 }
 @media only screen and (max-width: 500px) {
   .intro {
-    font-size: 1.2em;
-    margin-top: 77px;
+    font-size: 1.8em;
+    margin-top: 73px;
     margin-left: 10px;
     margin-right: 10px;
-    height: 300px;
+    height: 240px;
   }
   h1{
     font-size: 1.3em;
@@ -480,11 +481,11 @@ footer{
 }
 @media only screen and (max-width: 380px) {
   .intro {
-    font-size: 1.8em;
-    margin-top: 70px;
+    font-size: 2em;
+    margin-top: 80px;
     margin-left: 10px;
     margin-right: 10px;
-    height: 320px;
+    height: 250px;
   }
   .dot, .dot2{
     height: 70px;
